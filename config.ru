@@ -1,0 +1,5 @@
+require 'sinatra'
+require 'sinatra/activerecord'
+require_relative 'config/environment'
+require_relative 'config/database'
+require_relative 'app/models/contact'
