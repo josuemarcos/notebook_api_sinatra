@@ -17,4 +17,10 @@ class ContactRoutes < Sinatra::Base
     @contactController.get_all_contacts
   end
 
+  get('/:id') do
+    result = @contactController.get_contact_by_id(params[:id])
+    status result[:status]
+    {result: result[:body]}.to_json
+  end
+
 end

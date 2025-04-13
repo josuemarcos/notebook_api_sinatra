@@ -16,8 +16,6 @@ contacts = [
   }
 ]
 
-
-
 contacts.each do |contact|
   Contact.create(contact)
 end

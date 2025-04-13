@@ -1,6 +1,6 @@
 require 'sinatra/base'
 require 'sinatra/activerecord'
-require_relative 'config/environment'
+require_relative 'app/models/'
 
 
 class App < Sinatra::Base
